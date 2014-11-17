@@ -7,16 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import "DeviceInfo.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) DeviceInfo *deviceInfo;
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.deviceInfo = [DeviceInfo info];
+    [self.deviceInfo gatherDeviceInfomation];
     return YES;
 }
 

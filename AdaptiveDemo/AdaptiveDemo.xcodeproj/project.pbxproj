@@ -14,6 +14,7 @@
 		65A1191C1A19EB4B0003CFA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65A1191B1A19EB4B0003CFA7 /* Images.xcassets */; };
 		65A1191F1A19EB4B0003CFA7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65A1191D1A19EB4B0003CFA7 /* LaunchScreen.xib */; };
 		65A1192B1A19EB4B0003CFA7 /* AdaptiveDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A1192A1A19EB4B0003CFA7 /* AdaptiveDemoTests.m */; };
+		65A119371A19F4AE0003CFA7 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A119361A19F4AE0003CFA7 /* DeviceInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		65A119241A19EB4B0003CFA7 /* AdaptiveDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdaptiveDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A119291A19EB4B0003CFA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65A1192A1A19EB4B0003CFA7 /* AdaptiveDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdaptiveDemoTests.m; sourceTree = "<group>"; };
+		65A119351A19F4AE0003CFA7 /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		65A119361A19F4AE0003CFA7 /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		65A1190D1A19EB4B0003CFA7 /* AdaptiveDemo */ = {
 			isa = PBXGroup;
 			children = (
+				65A119341A19F4AE0003CFA7 /* DeviceInfo */,
 				65A119121A19EB4B0003CFA7 /* AppDelegate.h */,
 				65A119131A19EB4B0003CFA7 /* AppDelegate.m */,
 				65A119151A19EB4B0003CFA7 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				65A119291A19EB4B0003CFA7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65A119341A19F4AE0003CFA7 /* DeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				65A119351A19F4AE0003CFA7 /* DeviceInfo.h */,
+				65A119361A19F4AE0003CFA7 /* DeviceInfo.m */,
+			);
+			path = DeviceInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				65A119171A19EB4B0003CFA7 /* ViewController.m in Sources */,
 				65A119141A19EB4B0003CFA7 /* AppDelegate.m in Sources */,
 				65A119111A19EB4B0003CFA7 /* main.m in Sources */,
+				65A119371A19F4AE0003CFA7 /* DeviceInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +426,7 @@
 				65A119301A19EB4B0003CFA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65A119311A19EB4B0003CFA7 /* Build configuration list for PBXNativeTarget "AdaptiveDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +435,7 @@
 				65A119331A19EB4B0003CFA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
